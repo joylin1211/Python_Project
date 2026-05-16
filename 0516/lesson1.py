@@ -31,5 +31,6 @@ def guess_number_game():
             print(f"你總共猜了 {attempts} 次。")
             break
 
+上傳完成
 if __name__ == "__main__":
     guess_number_game()
