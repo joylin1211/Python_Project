@@ -14,6 +14,7 @@ resolution-markers = [
 members = [
     "0530",
     "0606",
+    "0613",
     "python-project",
 ]
 
@@ -38,6 +39,17 @@ requires-dist = [
     { name = "reportlab", specifier = ">=4.5.1" },
     { name = "requests", specifier = ">=2.34.2" },
 ]
+
+[[package]]
+name = "0613"
+version = "0.1.0"
+source = { virtual = "0613" }
+dependencies = [
+    { name = "report" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "report", specifier = ">=0.0.1" }]
 
 [[package]]
 name = "certifi"
@@ -282,6 +294,26 @@ wheels = [
 name = "python-project"
 version = "0.1.0"
 source = { virtual = "." }
+dependencies = [
+    { name = "pandas" },
+    { name = "reportlab" },
+    { name = "requests" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "pandas", specifier = ">=3.0.3" },
+    { name = "reportlab", specifier = ">=4.5.1" },
+    { name = "requests", specifier = ">=2.34.2" },
+]
+
+[[package]]
+name = "report"
+version = "0.0.1"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a0/0e/26ac9d99ec4fb5adddda6aae963de72b767198a5436728a41eee2f23d363/report-0.0.1-py2.py3-none-any.whl", hash = "sha256:d73ee6205febe0bc897851eb5015edad1c76e4023e7d74679feae5e1fdbb2802", size = 2677, upload-time = "2017-03-27T15:46:16.57Z" },
+]
 
 [[package]]
 name = "reportlab"
